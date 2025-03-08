@@ -31,7 +31,7 @@
 </head>
 <body>
 
-    <h1>José Ángel López Díaz</h1>
+    <h1> José Ángel López Díaz</h1>
     <h2>
         LinkedIn: 
         <a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">
