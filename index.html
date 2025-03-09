@@ -42,6 +42,15 @@
         }
     </style>
 </head>
+    <script>
+    document.querySelectorAll(".accordion-btn").forEach(button => {
+        button.addEventListener("click", function() {
+            this.nextElementSibling.style.display = 
+                this.nextElementSibling.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
 <body>
     <div class="header"></div>
     <div class="container">
@@ -53,10 +62,28 @@
     <img src="https://flagcdn.com/w40/it.png" alt="Italian Flag">
     <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag">
     <img src="https://flagcdn.com/w40/fr.png" alt="French Flag">
+    <img src="https://flagcdn.com/w40/fr.png" alt="German Flag">
 </div>
 
         <p><a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">LinkedIn Profile</a></p>
         <p>Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. I created this site to keep a record of my personal goals and achievements.</p>
+        <div class="accordion">
+    <button class="accordion-btn">Idiomas</button>
+    <div class="accordion-content">
+        <p>A</p>
+    </div>
+
+    <button class="accordion-btn">Mi libro</button>
+    <div class="accordion-content">
+        <p>A</p>
+    </div>
+
+    <button class="accordion-btn">Flauta</button>
+    <div class="accordion-content">
+        <p>A</p>
+    </div>
+</div>
+
         <img src="cara.jpg" alt="Photo of José Ángel López Díaz">
     </div>
     <div class="footer"></div>
