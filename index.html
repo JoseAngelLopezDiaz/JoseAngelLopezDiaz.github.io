@@ -3,102 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Señor Jose`s website</title>
+    <title>Señor Jose's Website</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
+        /* Ajustes generales */
         body {
             margin: 0;
             padding: 0;
             background-color: white;
+            font-family: 'Times New Roman', serif; /* Asegura la misma fuente */
+            min-height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             flex-direction: column;
+            align-items: center;
         }
+
+        /* Bandas verdes */
         .header, .footer {
             background-color: #2E8B57; /* Dark green */
             width: 100%;
             height: 100px;
         }
+
+        /* Contenedor principal */
         .container {
             text-align: center;
-            font-family: 'Times New Roman', serif;
             padding: 20px;
             width: 50%;
         }
+
         h1, h2 {
             margin: 10px 0;
         }
+
         a {
             text-decoration: none;
             color: #0077b5;
             font-weight: bold;
         }
+
         img {
             max-width: 100%;
             height: auto;
             margin-top: 15px;
             border-radius: 10px;
         }
+
+        /* Desplegables (acordeón) */
+        .accordion-btn {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+        }
+
+        .accordion-btn:hover {
+            background-color: #45a049;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-left: 3px solid #4CAF50;
+        }
+
     </style>
 </head>
-    <script>
-    document.querySelectorAll(".accordion-btn").forEach(button => {
-        button.addEventListener("click", function() {
-            this.nextElementSibling.style.display = 
-                this.nextElementSibling.style.display === "block" ? "none" : "block";
-        });
-    });
-</script>
-
 <body>
-    <div class="green-bar"></div>
-
-<!-- Aquí va tu contenido de la web -->
-
-<div class="green-bar"></div>
 
     <div class="header"></div>
+
     <div class="container">
         <h1>Personal Website of José Ángel López Díaz</h1>
         <h2>Energy and Mineral Resources Engineering & Civil Engineering</h2>
         <h2>Welcome to My Website</h2>
-<div>
-    <img src="https://flagcdn.com/w40/es.png" alt="Spanish Flag">
-    <img src="https://flagcdn.com/w40/it.png" alt="Italian Flag">
-    <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag">
-    <img src="https://flagcdn.com/w40/fr.png" alt="French Flag">
-    <img src="https://flagcdn.com/w40/de.png" alt="German Flag">
 
-</div>
+        <!-- Banderas -->
+        <div>
+            <img src="https://flagcdn.com/w40/es.png" alt="Spanish Flag">
+            <img src="https://flagcdn.com/w40/it.png" alt="Italian Flag">
+            <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag">
+            <img src="https://flagcdn.com/w40/fr.png" alt="French Flag">
+            <img src="https://flagcdn.com/w40/de.png" alt="German Flag">
+        </div>
 
-        <p><a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">LinkedIn Profile</a></p>
-        <p>Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. I created this site to keep a record of my personal goals and achievements. Hope you like it!</p>
+        <!-- Texto de bienvenida -->
+        <p>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">LinkedIn Profile</a>
+        </p>
+        <p>
+            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. I created this site to keep a record of my personal goals and achievements. Hope you like it!
+        </p>
+
+        <!-- Acordeón -->
         <div class="accordion">
-    <button class="accordion-btn">Languages</button>
-    <div class="accordion-content">
-        <p>I can fluently speak spanish, english, french, italian and I`m learning a little bit of german and russian too. I`m just bored, it`s no wonder that this webpage even exists.</p>
-    </div>
+            <button class="accordion-btn">Languages</button>
+            <div class="accordion-content">
+                <p>I can fluently speak Spanish, English, French, Italian and I'm learning a little bit of German and Russian too. I'm just bored, it's no wonder that this webpage even exists.</p>
+            </div>
 
-    <button class="accordion-btn">My book</button>
-    <div class="accordion-content">
-        <p>Little progress here. It is said that in life you must at least write a book and plant a tree. At least i`ve already done the second one.</p>
-    </div>
+            <button class="accordion-btn">My book</button>
+            <div class="accordion-content">
+                <p>Little progress here. It is said that in life you must at least write a book and plant a tree. At least I've already done the second one.</p>
+            </div>
 
-    <button class="accordion-btn">Flute</button>
-    <div class="accordion-content">
-        <p>Still learnking,I`m not something of a musician myself, at least, yet.</p>
-    </div>
-</div>
+            <button class="accordion-btn">Flute</button>
+            <div class="accordion-content">
+                <p>Still learning, I'm not something of a musician myself, at least, yet.</p>
+            </div>
+        </div>
 
         <img src="cara.jpg" alt="Photo of José Ángel López Díaz">
     </div>
+
     <div class="footer"></div>
+
+    <script>
+        document.querySelectorAll(".accordion-btn").forEach(button => {
+            button.addEventListener("click", function() {
+                let content = this.nextElementSibling;
+                content.style.display = content.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+
 </body>
 </html>
-<link rel="stylesheet" href="styles.css">
-<div class="green-bar"></div>
-
-<!-- Aquí va tu contenido de la web -->
-
-<div class="green-bar"></div>
