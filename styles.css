@@ -1,6 +1,6 @@
 /* ---- Estilos generales ---- */
 body {
-    background: linear-gradient(to right, #f3f4f6, #e5e7eb); /* Suave degradado */
+    background: linear-gradient(to right, #f3f4f6, #e5e7eb);
     font-family: 'Times New Roman', serif;
     color: #333;
     margin: 0;
@@ -89,28 +89,10 @@ p {
 /* ---- Contenido de los desplegables ---- */
 .accordion-content {
     display: none;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0;
+    padding: 10px;
     background-color: #f1f1f1;
     border-left: 3px solid #4CAF50;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-
-/* ---- Cuando el contenido está abierto ---- */
-.accordion-content.open {
-    max-height: 500px;
-    padding: 10px;
-}
-
-/* ---- Script para los desplegables ---- */
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll(".accordion-btn").forEach(button => {
-        button.addEventListener("click", function() {
-            let content = this.nextElementSibling;
-            content.classList.toggle("open");
-        });
-    });
-});
