@@ -1,16 +1,61 @@
-/* Styles for flags */
+/* ---- Estilos generales ---- */
+body {
+    background: linear-gradient(to right, #f3f4f6, #e5e7eb); /* Suave degradado */
+    font-family: 'Times New Roman', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ---- Bandas verdes arriba y abajo ---- */
+.green-bar {
+    background-color: #2E8B57;
+    height: 20px;
+    width: 100%;
+}
+
+/* ---- Header y Footer ---- */
+.header, .footer {
+    background-color: #2E8B57;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ---- Contenedor principal ---- */
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 50%;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* ---- Estilos de las banderas ---- */
 .flags {
     text-align: center;
     margin: 10px 0;
 }
 
 .flags img {
-    width: 50px; /* Adjust size */
+    width: 50px;
     height: auto;
     margin: 5px;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Style for the introduction text */
+.flags img:hover {
+    transform: scale(1.1);
+}
+
+/* ---- Texto de bienvenida ---- */
 p {
     font-style: italic;
     color: #333;
@@ -18,81 +63,54 @@ p {
     max-width: 600px;
     margin: 20px auto;
 }
+
+/* ---- Botones de los desplegables ---- */
 .accordion-btn {
     width: 100%;
-    background-color: #4CAF50; /* Verde bonito */
+    background: linear-gradient(to right, #4CAF50, #267c44);
     color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 12px;
     text-align: left;
     border: none;
     outline: none;
     font-size: 18px;
-    transition: 0.4s;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-btn:hover {
-    background-color: #45a049;
+    background: linear-gradient(to right, #45a049, #1e6f38);
+    transform: scale(1.02);
 }
 
+/* ---- Contenido de los desplegables ---- */
 .accordion-content {
     display: none;
-    .green-bar {
-    background-color: green;
-    height: 20px; /* Ajusta según lo que tenías */
-    width: 100%;
-}
-
-    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
     background-color: #f1f1f1;
     border-left: 3px solid #4CAF50;
-}
-/* Styles for flags */
-.flags {
-    text-align: center;
-    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
 }
 
-.flags img {
-    width: 50px; /* Adjust size */
-    height: auto;
-    margin: 5px;
-}
-
-/* Style for the introduction text */
-p {
-    font-style: italic;
-    color: #333;
-    text-align: center;
-    max-width: 600px;
-    margin: 20px auto;
-}
-.accordion-btn {
-    width: 100%;
-    background-color: #4CAF50; /* Verde bonito */
-    color: white;
-    cursor: pointer;
+/* ---- Cuando el contenido está abierto ---- */
+.accordion-content.open {
+    max-height: 500px;
     padding: 10px;
-    text-align: left;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    transition: 0.4s;
 }
 
-.accordion-btn:hover {
-    background-color: #45a049;
-}
-
-.accordion-content {
-    display: none;
-    .green-bar {
-    background-color: green;
-    height: 20px; /* Ajusta según lo que tenías */
-    width: 100%;
-}
-
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-left: 3px solid #4CAF50;
-}
+/* ---- Script para los desplegables ---- */
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".accordion-btn").forEach(button => {
+        button.addEventListener("click", function() {
+            let content = this.nextElementSibling;
+            content.classList.toggle("open");
+        });
+    });
+});
