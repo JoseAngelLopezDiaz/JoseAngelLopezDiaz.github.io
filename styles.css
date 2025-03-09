@@ -18,3 +18,32 @@ p {
     max-width: 600px;
     margin: 20px auto;
 }
+.accordion-btn {
+    width: 100%;
+    background-color: #4CAF50; /* Verde bonito */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.accordion-btn:hover {
+    background-color: #45a049;
+}
+
+.accordion-content {
+    display: none;
+    .green-bar {
+    background-color: green;
+    height: 20px; /* Ajusta según lo que tenías */
+    width: 100%;
+}
+
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-left: 3px solid #4CAF50;
+}
