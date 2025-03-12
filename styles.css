@@ -1,96 +1,78 @@
-/* Ajustes generales */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    font-family: 'Merriweather', serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Señor Jose's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* Menú de navegación */
-.nav {
-    width: 100%;
-    height: 60px;
-    background-color: #2E8B57;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
+    <!-- Barra de navegación -->
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
-.nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 0 20px;
-    font-weight: bold;
-    padding: 10px;
-    transition: background 0.3s;
-}
+    <div class="header"></div>
 
-.nav a:hover {
-    background-color: #45a049;
-    border-radius: 5px;
-}
+    <div class="container">
+        <h1>Personal Website of José Ángel López Díaz</h1>
+        <h2>Energy and Mineral Resources Engineering & Civil Engineering</h2>
+        <h2>Welcome to My Website</h2>
 
-/* Bandas verdes */
-.header, .footer {
-    background-color: #2E8B57;
-    width: 100%;
-    height: 100px;
-    margin-top: 60px;
-}
+        <!-- Banderas -->
+        <div class="flags">
+            <img src="https://flagcdn.com/w40/es.png" alt="Spanish Flag">
+            <img src="https://flagcdn.com/w40/it.png" alt="Italian Flag">
+            <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag">
+            <img src="https://flagcdn.com/w40/fr.png" alt="French Flag">
+            <img src="https://flagcdn.com/w40/de.png" alt="German Flag">
+        </div>
 
-/* Contenedor principal */
-.container {
-    text-align: center;
-    padding: 20px;
-    max-width: 800px;
-}
+        <!-- Texto de bienvenida -->
+        <p>
+            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. 
+            I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. 
+            I created this site to keep a record of my personal goals and achievements. Hope you like it!
+        </p>
 
-/* Estilos para banderas */
-.flags {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-bottom: 20px;
-}
+        <!-- Acordeón -->
+        <div class="accordion">
+            <button class="accordion-btn">Languages</button>
+            <div class="accordion-content">
+                <p>I can fluently speak Spanish, English, French, Italian, and I'm learning a little bit of German and Russian too. 
+                I'm just bored, but I enjoy learning.</p>
+            </div>
 
-/* Acordeón */
-.accordion-btn {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    text-align: left;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    transition: 0.4s;
-}
+            <button class="accordion-btn">My book</button>
+            <div class="accordion-content">
+                <p>Still in progress, but every great book starts with a blank page.</p>
+            </div>
 
-.accordion-btn:hover {
-    background-color: #45a049;
-}
+            <button class="accordion-btn">Flute</button>
+            <div class="accordion-content">
+                <p>I'm still learning, but music is a journey, not a destination.</p>
+            </div>
+        </div>
 
-.accordion-content {
-    display: none;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-left: 3px solid #4CAF50;
-    transition: max-height 0.4s ease-in-out;
-    overflow: hidden;
-    max-height: 0;
-}
+        <img src="cara.jpg" alt="Photo of José Ángel López Díaz">
+    </div>
 
-.accordion-btn.active + .accordion-content {
-    display: block;
-    max-height: 300px;
-}
+    <div class="footer"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".accordion-btn").forEach(button => {
+                button.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    let content = this.nextElementSibling;
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
