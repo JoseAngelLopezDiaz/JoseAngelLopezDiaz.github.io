@@ -6,7 +6,7 @@
     <title>Señor Jose's Website</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Ajustes generales */
+        /* General Styles */
         body {
             margin: 0;
             padding: 0;
@@ -18,14 +18,14 @@
             align-items: center;
         }
 
-        /* Bandas verdes */
+        /* Green Bands */
         .header, .footer {
-            background-color: #2E8B57; /* Dark green */
+            background-color: #2E8B57;
             width: 100%;
             height: 100px;
         }
 
-        /* Barra de navegación */
+        /* Navigation Bar */
         .navbar {
             display: flex;
             justify-content: center;
@@ -48,7 +48,7 @@
             text-decoration: underline;
         }
 
-        /* Contenedor principal */
+        /* Main Container */
         .container {
             text-align: center;
             padding: 20px;
@@ -72,7 +72,7 @@
             border-radius: 10px;
         }
 
-        /* Secciones ocultas */
+        /* Hidden Sections */
         .section {
             display: none;
         }
@@ -81,7 +81,7 @@
             display: block;
         }
 
-        /* Desplegables (acordeón) */
+        /* Accordion */
         .accordion-btn {
             width: 100%;
             background-color: #4CAF50;
@@ -112,20 +112,20 @@
 
     <div class="header"></div>
 
-    <!-- Barra de navegación -->
+    <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="#" onclick="showSection('home')">Inicio</a>
-        <a href="#" onclick="showSection('about')">Acerca de</a>
-        <a href="#" onclick="showSection('contact')">Contacto</a>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
     </div>
 
-    <!-- Sección de Inicio -->
+    <!-- Home Section -->
     <div id="home" class="container section active">
         <h1>Personal Website of José Ángel López Díaz</h1>
         <h2>Energy and Mineral Resources Engineering & Civil Engineering</h2>
         <h2>Welcome to My Website</h2>
 
-        <!-- Banderas -->
+        <!-- Flags -->
         <div>
             <img src="https://flagcdn.com/w40/es.png" alt="Spanish Flag">
             <img src="https://flagcdn.com/w40/it.png" alt="Italian Flag">
@@ -141,68 +141,12 @@
             Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages.
         </p>
 
-        <!-- Acordeón -->
+        <!-- Accordion -->
         <div class="accordion">
             <button class="accordion-btn">Languages</button>
             <div class="accordion-content">
-                <p>I can fluently speak Spanish, English, French, Italian and I'm learning a little bit of German and Russian too.</p>
+                <p>I can fluently speak Spanish, English, French, Italian, and I'm learning a little bit of German and Russian too.</p>
             </div>
 
             <button class="accordion-btn">My book</button>
-            <div class="accordion-content">
-                <p>Little progress here. At least I've already planted a tree.</p>
-            </div>
-
-            <button class="accordion-btn">Flute</button>
-            <div class="accordion-content">
-                <p>Still learning, I'm not something of a musician myself, at least, yet.</p>
-            </div>
-        </div>
-
-        <img src="cara.jpg" alt="Photo of José Ángel López Díaz">
-    </div>
-
-    <!-- Sección Acerca de -->
-    <div id="about" class="container section">
-        <h1>Acerca de</h1>
-        <p>Bienvenido a Cumstadística, el único sitio web donde la estadística y la lógica se mezclan con insultos gratuitos, referencias culturales fuera de lugar y consejos de vida que probablemente arruinen la tuya.</p>
-        <p>Somos C, J y U, tres mentes brillantes (según nuestros estándares) unidas por una pasión enfermiza por la precisión...</p>
-        <p>Si eres lo suficientemente fuerte para soportar la verdad sin filtro, puedes quedarte. Pero si eres de los que se ofenden fácil, recuerda: la puerta está ahí, y no te molestes en cerrarla al salir.</p>
-    </div>
-
-    <!-- Sección de Contacto -->
-    <div id="contact" class="container section">
-        <h1>Contacto</h1>
-        <p>Si quieres saber más sobre mí, contáctame en mi LinkedIn:</p>
-        <p><a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">Mi LinkedIn</a></p>
-    </div>
-
-    <div class="footer"></div>
-
-    <script>
-        // Función para cambiar de sección
-        function showSection(sectionId) {
-            document.querySelectorAll('.section').forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-        }
-
-        // Script para el acordeón
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll(".accordion-btn").forEach(button => {
-                button.addEventListener("click", function () {
-                    let content = this.nextElementSibling;
-                    document.querySelectorAll(".accordion-content").forEach(item => {
-                        if (item !== content) {
-                            item.style.display = "none";
-                        }
-                    });
-                    content.style.display = (content.style.display === "block") ? "none" : "block";
-                });
-            });
-        });
-    </script>
-
-</body>
-</html>
+            <div class="accordion-content
