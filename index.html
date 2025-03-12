@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: white;
-            font-family: 'Times New Roman', serif; /* Asegura la misma fuente */
+            font-family: 'Times New Roman', serif;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -23,6 +23,29 @@
             background-color: #2E8B57; /* Dark green */
             width: 100%;
             height: 100px;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2E8B57;
+            width: 100%;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
         }
 
         /* Contenedor principal */
@@ -47,6 +70,15 @@
             height: auto;
             margin-top: 15px;
             border-radius: 10px;
+        }
+
+        /* Secciones ocultas */
+        .section {
+            display: none;
+        }
+
+        .active {
+            display: block;
         }
 
         /* Desplegables (acordeón) */
@@ -80,7 +112,15 @@
 
     <div class="header"></div>
 
-    <div class="container">
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <a href="#" onclick="showSection('home')">Inicio</a>
+        <a href="#" onclick="showSection('about')">Acerca de</a>
+        <a href="#" onclick="showSection('contact')">Contacto</a>
+    </div>
+
+    <!-- Sección de Inicio -->
+    <div id="home" class="container section active">
         <h1>Personal Website of José Ángel López Díaz</h1>
         <h2>Energy and Mineral Resources Engineering & Civil Engineering</h2>
         <h2>Welcome to My Website</h2>
@@ -94,24 +134,23 @@
             <img src="https://flagcdn.com/w40/de.png" alt="German Flag">
         </div>
 
-        <!-- Texto de bienvenida -->
         <p>
             <a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">LinkedIn Profile</a>
         </p>
         <p>
-            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. I created this site to keep a record of my personal goals and achievements. Hope you like it!
+            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages.
         </p>
 
         <!-- Acordeón -->
         <div class="accordion">
             <button class="accordion-btn">Languages</button>
             <div class="accordion-content">
-                <p>I can fluently speak Spanish, English, French, Italian and I'm learning a little bit of German and Russian too. I'm just bored, it's no wonder that this webpage even exists.</p>
+                <p>I can fluently speak Spanish, English, French, Italian and I'm learning a little bit of German and Russian too.</p>
             </div>
 
             <button class="accordion-btn">My book</button>
             <div class="accordion-content">
-                <p>Little progress here. It is said that in life you must at least write a book, have a son and plant a tree. At least I've already done the third one.</p>
+                <p>Little progress here. At least I've already planted a tree.</p>
             </div>
 
             <button class="accordion-btn">Flute</button>
@@ -123,22 +162,42 @@
         <img src="cara.jpg" alt="Photo of José Ángel López Díaz">
     </div>
 
+    <!-- Sección Acerca de -->
+    <div id="about" class="container section">
+        <h1>Acerca de</h1>
+        <p>Bienvenido a Cumstadística, el único sitio web donde la estadística y la lógica se mezclan con insultos gratuitos, referencias culturales fuera de lugar y consejos de vida que probablemente arruinen la tuya.</p>
+        <p>Somos C, J y U, tres mentes brillantes (según nuestros estándares) unidas por una pasión enfermiza por la precisión...</p>
+        <p>Si eres lo suficientemente fuerte para soportar la verdad sin filtro, puedes quedarte. Pero si eres de los que se ofenden fácil, recuerda: la puerta está ahí, y no te molestes en cerrarla al salir.</p>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <div id="contact" class="container section">
+        <h1>Contacto</h1>
+        <p>Si quieres saber más sobre mí, contáctame en mi LinkedIn:</p>
+        <p><a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">Mi LinkedIn</a></p>
+    </div>
+
     <div class="footer"></div>
 
     <script>
+        // Función para cambiar de sección
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Script para el acordeón
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll(".accordion-btn").forEach(button => {
                 button.addEventListener("click", function () {
                     let content = this.nextElementSibling;
-
-                    // Cierra todos los demás desplegables
                     document.querySelectorAll(".accordion-content").forEach(item => {
                         if (item !== content) {
                             item.style.display = "none";
                         }
                     });
-
-                    // Alterna la visibilidad del actual
                     content.style.display = (content.style.display === "block") ? "none" : "block";
                 });
             });
