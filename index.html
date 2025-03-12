@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Señor Jose's Website</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Ajustes generales */
-        body {
-            <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web</title>
-    <link rel="stylesheet" href="style.css"> <!-- Asegúrate de tener este archivo CSS -->
 </head>
 <body>
 
@@ -34,95 +24,19 @@
     </section>
 
     <section id="about">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos un equipo de expertos en desarrollo web, diseño y soluciones digitales. Nos dedicamos a crear experiencias únicas en línea con un enfoque innovador y profesional.</p>
+        <h2>Sobre Mí</h2>
+        <p>Soy ingeniero en Recursos Energéticos y Minerales, así como en Ingeniería Civil. También tengo pasión por los idiomas, la música y el ajedrez. Este sitio es un reflejo de mis intereses y proyectos.</p>
     </section>
 
     <section id="contact">
         <h2>Contacto</h2>
-        <p>Puedes ponerte en contacto con nosotros a través de nuestro correo: <a href="mailto:info@tusitio.com">info@tusitio.com</a></p>
+        <p>Puedes ponerte en contacto conmigo a través de mi <a href="mailto:info@tusitio.com">correo electrónico</a> o en <a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">LinkedIn</a>.</p>
     </section>
-
-</body>
-</html>
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            font-family: 'Times New Roman', serif; /* Asegura la misma fuente */
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Bandas verdes */
-        .header, .footer {
-            background-color: #2E8B57; /* Dark green */
-            width: 100%;
-            height: 100px;
-        }
-
-        /* Contenedor principal */
-        .container {
-            text-align: center;
-            padding: 20px;
-            width: 50%;
-        }
-
-        h1, h2 {
-            margin: 10px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #0077b5;
-            font-weight: bold;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 15px;
-            border-radius: 10px;
-        }
-
-        /* Desplegables (acordeón) */
-        .accordion-btn {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-            padding: 10px;
-            text-align: left;
-            border: none;
-            outline: none;
-            font-size: 18px;
-            transition: 0.4s;
-        }
-
-        .accordion-btn:hover {
-            background-color: #45a049;
-        }
-
-        .accordion-content {
-            display: none;
-            padding: 10px;
-            background-color: #f1f1f1;
-            border-left: 3px solid #4CAF50;
-        }
-
-    </style>
-</head>
-<body>
-
-    <div class="header"></div>
 
     <div class="container">
         <h1>Personal Website of José Ángel López Díaz</h1>
         <h2>Energy and Mineral Resources Engineering & Civil Engineering</h2>
-        <h2>Welcome to My Website</h2>
 
-        <!-- Banderas -->
         <div>
             <img src="https://flagcdn.com/w40/es.png" alt="Spanish Flag">
             <img src="https://flagcdn.com/w40/it.png" alt="Italian Flag">
@@ -131,24 +45,21 @@
             <img src="https://flagcdn.com/w40/de.png" alt="German Flag">
         </div>
 
-        <!-- Texto de bienvenida -->
         <p>
             <a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">LinkedIn Profile</a>
         </p>
-        <p>
-            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. I created this site to keep a record of my personal goals and achievements. Hope you like it!
-        </p>
 
-        <!-- Acordeón -->
+        <p>Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. Hope you like it!</p>
+
         <div class="accordion">
             <button class="accordion-btn">Languages</button>
             <div class="accordion-content">
-                <p>I can fluently speak Spanish, English, French, Italian and I'm learning a little bit of German and Russian too. I'm just bored, it's no wonder that this webpage even exists.</p>
+                <p>I can fluently speak Spanish, English, French, Italian, and I'm learning a little bit of German and Russian too. I'm just bored, it's no wonder that this webpage even exists.</p>
             </div>
 
             <button class="accordion-btn">My book</button>
             <div class="accordion-content">
-                <p>Little progress here. It is said that in life you must at least write a book, have a son and plant a tree. At least I've already done the third one.</p>
+                <p>Little progress here. It is said that in life you must at least write a book, have a son, and plant a tree. At least I've already done the third one.</p>
             </div>
 
             <button class="accordion-btn">Flute</button>
@@ -168,14 +79,12 @@
                 button.addEventListener("click", function () {
                     let content = this.nextElementSibling;
 
-                    // Cierra todos los demás desplegables
                     document.querySelectorAll(".accordion-content").forEach(item => {
                         if (item !== content) {
                             item.style.display = "none";
                         }
                     });
 
-                    // Alterna la visibilidad del actual
                     content.style.display = (content.style.display === "block") ? "none" : "block";
                 });
             });
