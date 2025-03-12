@@ -6,49 +6,26 @@
     <title>Señor Jose's Website</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* General Styles */
+        /* Ajustes generales */
         body {
             margin: 0;
             padding: 0;
             background-color: white;
-            font-family: 'Times New Roman', serif;
+            font-family: 'Times New Roman', serif; /* Asegura la misma fuente */
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Green Bands */
+        /* Bandas verdes */
         .header, .footer {
-            background-color: #2E8B57;
+            background-color: #2E8B57; /* Dark green */
             width: 100%;
             height: 100px;
         }
 
-        /* Navigation Bar */
-        .navbar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #2E8B57;
-            width: 100%;
-            padding: 15px;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin: 0 20px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-
-        /* Main Container */
+        /* Contenedor principal */
         .container {
             text-align: center;
             padding: 20px;
@@ -72,16 +49,7 @@
             border-radius: 10px;
         }
 
-        /* Hidden Sections */
-        .section {
-            display: none;
-        }
-
-        .active {
-            display: block;
-        }
-
-        /* Accordion */
+        /* Desplegables (acordeón) */
         .accordion-btn {
             width: 100%;
             background-color: #4CAF50;
@@ -112,20 +80,12 @@
 
     <div class="header"></div>
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="#" onclick="showSection('home')">Home</a>
-        <a href="#" onclick="showSection('about')">About</a>
-        <a href="#" onclick="showSection('contact')">Contact</a>
-    </div>
-
-    <!-- Home Section -->
-    <div id="home" class="container section active">
+    <div class="container">
         <h1>Personal Website of José Ángel López Díaz</h1>
         <h2>Energy and Mineral Resources Engineering & Civil Engineering</h2>
         <h2>Welcome to My Website</h2>
 
-        <!-- Flags -->
+        <!-- Banderas -->
         <div>
             <img src="https://flagcdn.com/w40/es.png" alt="Spanish Flag">
             <img src="https://flagcdn.com/w40/it.png" alt="Italian Flag">
@@ -134,19 +94,56 @@
             <img src="https://flagcdn.com/w40/de.png" alt="German Flag">
         </div>
 
+        <!-- Texto de bienvenida -->
         <p>
             <a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">LinkedIn Profile</a>
         </p>
         <p>
-            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages.
+            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. I created this site to keep a record of my personal goals and achievements. Hope you like it!
         </p>
 
-        <!-- Accordion -->
+        <!-- Acordeón -->
         <div class="accordion">
             <button class="accordion-btn">Languages</button>
             <div class="accordion-content">
-                <p>I can fluently speak Spanish, English, French, Italian, and I'm learning a little bit of German and Russian too.</p>
+                <p>I can fluently speak Spanish, English, French, Italian and I'm learning a little bit of German and Russian too. I'm just bored, it's no wonder that this webpage even exists.</p>
             </div>
 
             <button class="accordion-btn">My book</button>
-            <div class="accordion-content
+            <div class="accordion-content">
+                <p>Little progress here. It is said that in life you must at least write a book, have a son and plant a tree. At least I've already done the third one.</p>
+            </div>
+
+            <button class="accordion-btn">Flute</button>
+            <div class="accordion-content">
+                <p>Still learning, I'm not something of a musician myself, at least, yet.</p>
+            </div>
+        </div>
+
+        <img src="cara.jpg" alt="Photo of José Ángel López Díaz">
+    </div>
+
+    <div class="footer"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".accordion-btn").forEach(button => {
+                button.addEventListener("click", function () {
+                    let content = this.nextElementSibling;
+
+                    // Cierra todos los demás desplegables
+                    document.querySelectorAll(".accordion-content").forEach(item => {
+                        if (item !== content) {
+                            item.style.display = "none";
+                        }
+                    });
+
+                    // Alterna la visibilidad del actual
+                    content.style.display = (content.style.display === "block") ? "none" : "block";
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>        
