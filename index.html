@@ -5,15 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Señor Jose's Website</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ajustes generales */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: 'Times New Roman', serif; /* Asegura la misma fuente */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Bandas verdes */
+        .header, .footer {
+            background-color: #2E8B57; /* Dark green */
+            width: 100%;
+            height: 100px;
+        }
+
+        /* Contenedor principal */
+        .container {
+            text-align: center;
+            padding: 20px;
+            width: 50%;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0077b5;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+
+        /* Desplegables (acordeón) */
+        .accordion-btn {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+        }
+
+        .accordion-btn:hover {
+            background-color: #45a049;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-left: 3px solid #4CAF50;
+        }
+
+    </style>
 </head>
 <body>
-
-    <!-- Barra de navegación -->
-    <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
 
     <div class="header"></div>
 
@@ -23,7 +86,7 @@
         <h2>Welcome to My Website</h2>
 
         <!-- Banderas -->
-        <div class="flags">
+        <div>
             <img src="https://flagcdn.com/w40/es.png" alt="Spanish Flag">
             <img src="https://flagcdn.com/w40/it.png" alt="Italian Flag">
             <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag">
@@ -33,27 +96,27 @@
 
         <!-- Texto de bienvenida -->
         <p>
-            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. 
-            I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. 
-            I created this site to keep a record of my personal goals and achievements. Hope you like it!
+            <a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">LinkedIn Profile</a>
+        </p>
+        <p>
+            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. I created this site to keep a record of my personal goals and achievements. Hope you like it!
         </p>
 
         <!-- Acordeón -->
         <div class="accordion">
             <button class="accordion-btn">Languages</button>
             <div class="accordion-content">
-                <p>I can fluently speak Spanish, English, French, Italian, and I'm learning a little bit of German and Russian too. 
-                I'm just bored, but I enjoy learning.</p>
+                <p>I can fluently speak Spanish, English, French, Italian and I'm learning a little bit of German and Russian too. I'm just bored, it's no wonder that this webpage even exists.</p>
             </div>
 
             <button class="accordion-btn">My book</button>
             <div class="accordion-content">
-                <p>Still in progress, but every great book starts with a blank page.</p>
+                <p>Little progress here. It is said that in life you must at least write a book, have a son and plant a tree. At least I've already done the third one.</p>
             </div>
 
             <button class="accordion-btn">Flute</button>
             <div class="accordion-content">
-                <p>I'm still learning, but music is a journey, not a destination.</p>
+                <p>Still learning, I'm not something of a musician myself, at least, yet.</p>
             </div>
         </div>
 
@@ -66,13 +129,21 @@
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll(".accordion-btn").forEach(button => {
                 button.addEventListener("click", function () {
-                    this.classList.toggle("active");
                     let content = this.nextElementSibling;
-                    content.style.display = content.style.display === "block" ? "none" : "block";
+
+                    // Cierra todos los demás desplegables
+                    document.querySelectorAll(".accordion-content").forEach(item => {
+                        if (item !== content) {
+                            item.style.display = "none";
+                        }
+                    });
+
+                    // Alterna la visibilidad del actual
+                    content.style.display = (content.style.display === "block") ? "none" : "block";
                 });
             });
         });
     </script>
 
 </body>
-</html>
+</html>        
