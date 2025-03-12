@@ -1,78 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Señor Jose's Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* ---- Estilos generales ---- */
+body {
+    background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+    font-family: 'Times New Roman', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-    <!-- Barra de navegación -->
-    <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+/* ---- Bandas verdes arriba y abajo ---- */
+.green-bar {
+    background-color: #2E8B57;
+    height: 20px;
+    width: 100%;
+}
 
-    <div class="header"></div>
+/* ---- Header y Footer ---- */
+.header, .footer {
+    background-color: #2E8B57;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
 
-    <div class="container">
-        <h1>Personal Website of José Ángel López Díaz</h1>
-        <h2>Energy and Mineral Resources Engineering & Civil Engineering</h2>
-        <h2>Welcome to My Website</h2>
+/* ---- Contenedor principal ---- */
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 50%;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
 
-        <!-- Banderas -->
-        <div class="flags">
-            <img src="https://flagcdn.com/w40/es.png" alt="Spanish Flag">
-            <img src="https://flagcdn.com/w40/it.png" alt="Italian Flag">
-            <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag">
-            <img src="https://flagcdn.com/w40/fr.png" alt="French Flag">
-            <img src="https://flagcdn.com/w40/de.png" alt="German Flag">
-        </div>
+.container:hover {
+    transform: scale(1.02);
+}
 
-        <!-- Texto de bienvenida -->
-        <p>
-            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. 
-            I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. 
-            I created this site to keep a record of my personal goals and achievements. Hope you like it!
-        </p>
+/* ---- Estilos de las banderas ---- */
+.flags {
+    text-align: center;
+    margin: 10px 0;
+}
 
-        <!-- Acordeón -->
-        <div class="accordion">
-            <button class="accordion-btn">Languages</button>
-            <div class="accordion-content">
-                <p>I can fluently speak Spanish, English, French, Italian, and I'm learning a little bit of German and Russian too. 
-                I'm just bored, but I enjoy learning.</p>
-            </div>
+.flags img {
+    width: 50px;
+    height: auto;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+}
 
-            <button class="accordion-btn">My book</button>
-            <div class="accordion-content">
-                <p>Still in progress, but every great book starts with a blank page.</p>
-            </div>
+.flags img:hover {
+    transform: scale(1.1);
+}
 
-            <button class="accordion-btn">Flute</button>
-            <div class="accordion-content">
-                <p>I'm still learning, but music is a journey, not a destination.</p>
-            </div>
-        </div>
+/* ---- Texto de bienvenida ---- */
+p {
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+}
 
-        <img src="cara.jpg" alt="Photo of José Ángel López Díaz">
-    </div>
+/* ---- Botones de los desplegables ---- */
+.accordion-btn {
+    width: 100%;
+    background: linear-gradient(to right, #4CAF50, #267c44);
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-    <div class="footer"></div>
+.accordion-btn:hover {
+    background: linear-gradient(to right, #45a049, #1e6f38);
+    transform: scale(1.02);
+}
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll(".accordion-btn").forEach(button => {
-                button.addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    let content = this.nextElementSibling;
-                    content.style.display = content.style.display === "block" ? "none" : "block";
-                });
-            });
-        });
-    </script>
-
-</body>
-</html>
+/* ---- Contenido de los desplegables ---- */
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-left: 3px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
