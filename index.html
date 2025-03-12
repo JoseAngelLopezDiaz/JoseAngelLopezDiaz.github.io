@@ -126,28 +126,24 @@
     <div class="footer"></div>
 
     <script>
-        document.querySelectorAll(".accordion-btn").forEach(button => {
-            button.addEventListener("click", function() {
-                let content = this.nextElementSibling;
-                content.style.display = content.style.display === "block" ? "none" : "block";
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".accordion-btn").forEach(button => {
+                button.addEventListener("click", function () {
+                    let content = this.nextElementSibling;
+
+                    // Cierra todos los demás desplegables
+                    document.querySelectorAll(".accordion-content").forEach(item => {
+                        if (item !== content) {
+                            item.style.display = "none";
+                        }
+                    });
+
+                    // Alterna la visibilidad del actual
+                    content.style.display = (content.style.display === "block") ? "none" : "block";
+                });
             });
         });
     </script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".accordion-btn").forEach(button => {
-            button.addEventListener("click", function () {
-                let content = this.nextElementSibling;
-
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        });
-    });
-</script>
 
 </body>
 </html>
