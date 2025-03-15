@@ -121,3 +121,29 @@ p {
     transform: scale(1.1);
     background: linear-gradient(to right, #ff6a4d, #fd9a66);
 }
+/* Actualiza la barra de navegación para centrar el contenido */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilo para el botón de contacto */
+.contact-link {
+    background-color: white;
+    color: #2E8B57;
+    border: 2px solid #2E8B57;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #2E8B57;
+    color: white;
+    transform: scale(1.1);
+}
