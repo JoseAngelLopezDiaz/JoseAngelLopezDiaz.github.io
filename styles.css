@@ -177,3 +177,9 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #111;
 }
+@media (max-width: 600px) {
+  /* Estilos para dispositivos con ancho menor a 600px */
+  .content {
+    padding: 10px;
+  }
+}
