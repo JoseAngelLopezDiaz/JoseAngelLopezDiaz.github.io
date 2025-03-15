@@ -147,3 +147,11 @@ p {
     color: white;
     transform: scale(1.1);
 }
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh; /* Asegura que el contenido ocupe al menos el alto de la ventana */
+}
