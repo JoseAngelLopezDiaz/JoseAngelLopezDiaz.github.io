@@ -184,82 +184,109 @@ nav ul li a:hover {
   }
 }
 
-/* Reset básico */
+/* Fuente moderna con Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --primary: #4f46e5;
+  --bg: #f9fafb;
+  --text: #1f2937;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Tipografía limpia y legible */
 body {
-  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+  color: var(--text);
+  background-color: var(--bg);
   padding: 1rem;
 }
 
-/* Contenedor central adaptable */
+/* Contenedor responsive */
 .container {
   max-width: 960px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  margin: auto;
+  padding: 1rem;
 }
 
-/* Enlaces bonitos */
-a {
-  color: #007bff;
-  text-decoration: none;
+/* Cabecera elegante */
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Imágenes responsivas */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Navegación simple */
+/* Navegación */
 nav {
   display: flex;
+  justify-content: center;
+  gap: 1rem;
   flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #f8f8f8;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 nav a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
   padding: 0.5rem 1rem;
-  color: #333;
+  border-radius: var(--radius);
+  transition: background 0.2s;
 }
 
-/* Botones decentes */
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Tarjetas con sombra */
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+
+/* Botones */
 button {
-  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white;
   border: none;
-  background: #007bff;
-  color: #fff;
-  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
   font-weight: bold;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 button:hover {
-  background: #0056b3;
+  background: #3730a3;
+}
+
+/* Imagen responsive */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin-top: 1rem;
 }
 
 /* Media queries para móviles */
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-    padding: 0.5rem;
+@media (max-width: 600px) {
+  header {
+    font-size: 1.2rem;
+    padding: 1rem;
   }
 
   nav {
@@ -268,9 +295,7 @@ button:hover {
   }
 
   nav a {
-    padding: 0.5rem;
     width: 100%;
     text-align: center;
   }
 }
-
