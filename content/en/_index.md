@@ -6,7 +6,7 @@ params:
 ---
 
 {{% blocks/cover
-  title="Saludos, anónimo desconocido. Soy José Ángel López Díaz "
+  title="Saludos, anónimo desconocido. Soy José Ángel López Díaz. "
   height="full td-below-navbar"
   image_anchor="top"
 %}}
@@ -24,12 +24,12 @@ params:
 <!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
   <a {{% _param btn-lg primary %}} href="docs/">
-    Learn more
+    Sobre mí
   </a>
   <a {{% _param btn-lg secondary %}}
     href="{{% param github_repo %}}"
     target="_blank" rel="noopener noreferrer">
-    Get the code
+    Contacto
     {{% _param FA brands github "" %}}
   </a>
 </div>
@@ -52,7 +52,7 @@ Cualesquiera que hayan sido los motivos que te trajeron aquí, ahora no importan
 
 Mi pasión, aparte de la ingeniería de minas, es la literatura.
 
-Quizás sea lo que mejor se me da, o quizás sea lo que creo que es lo que mejor se me da.
+Quizás sea lo que mejor se me da, o quizás sea lo que creo que es lo que mejor se me da. En cualquier caso, he aquí mi [obra](MI LIBRO)
 
 {{% /blocks/feature %}}
 
