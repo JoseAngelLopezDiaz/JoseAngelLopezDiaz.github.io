@@ -48,7 +48,7 @@ Cualesquiera que hayan sido los motivos que te trajeron aquí, ahora no importan
 {{% blocks/section color="primary" type="row" %}}
 
 {{% blocks/feature title="Mi pasión es la literatura." icon="fas fa-book" %}}
-Quizás sea lo que mejor se me da, o quizás sea lo que creo que es lo que mejor se me da. En cualquier caso, he aquí mi [obra](MI LIBRO)
+Quizás sea lo que mejor se me da, o quizás sea lo que creo que es lo que mejor se me da. En cualquier caso, he aquí un enlace directo a la [felicidad](https://www.amazon.es/Moby-Dick-Original-Classic-Melville/dp/B0FFGFQ3SB/ref=asc_df_B0FFGFQ3SB?mcid=27941636fb6936c1931aa1bcffc8c747&tag=googshopes-21&linkCode=df0&hvadid=765732243833&hvpos=&hvnetw=g&hvrand=9444686718034719451&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047060&hvtargid=pla-2465659524714&psc=1&hvocijid=9444686718034719451-B0FFGFQ3SB-&hvexpln=0). 
 
 {{% /blocks/feature %}}
 
