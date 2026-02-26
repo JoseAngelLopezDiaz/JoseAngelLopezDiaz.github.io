@@ -1,6 +1,6 @@
 ---
 title: José Ángel López Díaz
-description: Entusiasta ingeniero de la energía y los recursos minerales. Ostensiblemente, tengo demasiado tiempo libre.
+description: Entusiasta ingeniero de la energía y los recursos minerales. Ostensiblemente, con demasiado tiempo libre.
 params:
   body_class: td-navbar-links-all-active
 ---
@@ -66,7 +66,7 @@ en chess.com, si te apetece perder. Mi foto de perfil es una taza con la cara de
 {{% /blocks/feature %}}
 
 {{% blocks/feature
-  title="Pulsa [aquí](https://www.youtube.com/watch?v=YqVRcFQagtI&list=RDYqVRcFQagtI&start_radio=1)) para una mejor expreiencia" icon="fab fa-music"
+  title="Pulsa [aquí](https://www.youtube.com/watch?v=YqVRcFQagtI&list=RDYqVRcFQagtI&start_radio=1) para una mejor expreiencia" icon="fab fa-music"
   url="https://x.com/docsydocs"
 %}}
 
