@@ -6,7 +6,7 @@ params:
 ---
 
 {{% blocks/cover
-  title="Saludos, anónimo desconocido. "
+  title="Saludos, anónimo desconocido. Soy José Ángel López Díaz "
   height="full td-below-navbar"
   image_anchor="top"
 %}}
@@ -52,7 +52,7 @@ Cualesquiera que hayan sido los motivos que te trajeron aquí, ahora no importan
 
 Mi pasión, aparte de la ingeniería de minas, es la literatura.
 
-Quizás sea lo que mejor se me da, o quizás crea que es lo que mejor se me da.
+Quizás sea lo que mejor se me da, o quizás sea lo que creo que es lo que mejor se me da.
 
 {{% /blocks/feature %}}
 
