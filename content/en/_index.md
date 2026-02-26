@@ -51,30 +51,30 @@ to create your own real websites with [Docsy](https://docsy.dev))
 
 {{% blocks/section color="primary" type="row" %}}
 
-{{% blocks/feature title="New chair metrics!" icon="fa-book" %}}
+{{% blocks/feature title="" icon="fa-book" %}}
 
-The Goldydocs UI now shows chair size metrics by default.
+Mi pasión, aparte de la ingeniería de minas, es la literatura.
 
-Please follow this space for updates!
+Quizás sea lo que mejor se me da, o quizás crea que es lo que mejor se me da.
 
 {{% /blocks/feature %}}
 
 {{% blocks/feature
-  title="Contributions welcome!" icon="fab fa-chess"
+  title="Me encanta el ajedrez" icon="fab fa-chess"
   url="https://github.com/google/docsy-example"
 %}}
 
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
+Puedes jugar [conmigo](https://www.chess.com/member/presio213)
+en chess.com, si te apetece perder.
 
 {{% /blocks/feature %}}
 
 {{% blocks/feature
-  title="Follow us on X!" icon="fab fa-x-youtube"
+  title="Pulsa aquí para una mejor expreiencia" icon="fab fa-x-languaje"
   url="https://x.com/docsydocs"
 %}}
 
-For announcement of latest features etc.
+Me encantan los idiomas, también.
 
 {{% /blocks/feature %}}
 
