@@ -1,12 +1,12 @@
 ---
-title: Goldydocs
-description: Porridge temperature assessment &mdash; in the cloud!
+title: José Ángel López Díaz
+description: Entusiasta ingeniero de la energía y los recursos minerales
 params:
   body_class: td-navbar-links-all-active
 ---
 
 {{% blocks/cover
-  title="Welcome to Goldydocs: A Docsy Example and Starter Project!"
+  title="Bienvenido a mi web! Cualesquiera que hayan sido los motivos que te trajeron aquí, ahora no importan. Estás aquí, y estás leyendo esto. Disfruta. "
   height="full td-below-navbar"
   image_anchor="top"
 %}}
@@ -51,7 +51,7 @@ to create your own real websites with [Docsy](https://docsy.dev))
 
 {{% blocks/section color="primary" type="row" %}}
 
-{{% blocks/feature title="New chair metrics!" icon="fa-lightbulb" %}}
+{{% blocks/feature title="New chair metrics!" icon="fa-book" %}}
 
 The Goldydocs UI now shows chair size metrics by default.
 
@@ -60,7 +60,7 @@ Please follow this space for updates!
 {{% /blocks/feature %}}
 
 {{% blocks/feature
-  title="Contributions welcome!" icon="fab fa-github"
+  title="Contributions welcome!" icon="fab fa-chess"
   url="https://github.com/google/docsy-example"
 %}}
 
@@ -70,7 +70,7 @@ contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
 {{% blocks/feature
-  title="Follow us on X!" icon="fab fa-x-twitter"
+  title="Follow us on X!" icon="fab fa-x-youtube"
   url="https://x.com/docsydocs"
 %}}
 
