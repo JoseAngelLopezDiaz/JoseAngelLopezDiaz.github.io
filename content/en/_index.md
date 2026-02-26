@@ -1,60 +1,93 @@
 ---
-title: "José Ángel López Díaz"
-linkTitle: "Home"
-type: "homepage"
+title: Goldydocs
+description: Porridge temperature assessment &mdash; in the cloud!
+params:
+  body_class: td-navbar-links-all-active
 ---
 
-# Personal Website of José Ángel López Díaz
+{{% blocks/cover
+  title="Welcome to Goldydocs: A Docsy Example and Starter Project!"
+  height="full td-below-navbar"
+  image_anchor="top"
+%}}
 
-## Energy and Mineral Resources Engineering & Civil Engineering
-## Welcome to My Website
+<!--
+  Want a cover without an image?
+  Add the following argument to the blocks/cover shortcode:
+    color="primary bg-gradient td-below-navbar"
+-->
 
-![Spanish flag](https://flagcdn.com/w40/es.png)
-![Italian flag](https://flagcdn.com/w40/it.png)
-![UK flag](https://flagcdn.com/w40/gb.png)
-![French flag](https://flagcdn.com/w40/fr.png)
-![German flag](https://flagcdn.com/w40/de.png)
+<!-- prettier-ignore -->
+{{% _param description %}}
+{.display-6}
 
-[LinkedIn profile](https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/)
+<!-- prettier-ignore -->
+<div class="td-cta-buttons my-5">
+  <a {{% _param btn-lg primary %}} href="docs/">
+    Learn more
+  </a>
+  <a {{% _param btn-lg secondary %}}
+    href="{{% param github_repo %}}"
+    target="_blank" rel="noopener noreferrer">
+    Get the code
+    {{% _param FA brands github "" %}}
+  </a>
+</div>
 
-Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. I created this site to keep a record of my personal goals and achievements. Hope you like it!
+{{% blocks/link-down color="info" %}}
 
-## Languages
+{{% /blocks/cover %}}
 
-I can fluently speak Spanish, English, French, Italian and I'm learning a little bit of German and Russian too. I'm just bored, it's no wonder that this webpage even exists.
+{{% blocks/lead color="white" %}}
 
-## My book
+Goldydocs provides a single web UI providing visibility into porridge
+temperature, chair size, and bed softness metrics! You can even find out who's
+been eating **your** porridge.
 
-It is said that in life you must at least write a book, plant a tree and have a son. Well, so far I’ve completed the first two. *La crisálida* is the result of countless hours standing in front of the computer, and so it is the work of my life, I guess.
+(Sadly, Goldydocs isn't a real project, but you can use this site as an example
+to create your own real websites with [Docsy](https://docsy.dev))
 
-## Flute
+{{% /blocks/lead %}}
 
-Still learning, I'm not something of a musician myself, at least, yet.
+{{% blocks/section color="primary" type="row" %}}
 
-## Engineering professional career
+{{% blocks/feature title="New chair metrics!" icon="fa-lightbulb" %}}
 
-I’m a passionate engineer, but still in college, though. I study in the Escuela Politécnica Superior de Belmez (EPSB), and I pre-registered in a professional mining association.
+The Goldydocs UI now shows chair size metrics by default.
 
-## Pico y pala Engineering
+Please follow this space for updates!
 
-At some point for some reason I thought that it would be a nice idea to create a YouTube channel where I can stand up on behalf of the mining industry, for it has been unfairly given a bad reputation throughout the years.
+{{% /blocks/feature %}}
 
-## Chess
+{{% blocks/feature
+  title="Contributions welcome!" icon="fab fa-github"
+  url="https://github.com/google/docsy-example"
+%}}
 
-There was no chess club in Belmez, and so I had to create one myself. Thanks to the support of Javier de los Ríos and my fellow companions, our little chess community blossomed. Over the past few years I’ve attended several tournaments, all of them for amateurs, without Elo rating. I guess my highest achievement here is playing and winning an amateur world champion, who also happened to be my math teacher in college, Javier de los Ríos.
+We do a [Pull Request](https://github.com/google/docsy-example/pulls)
+contributions workflow on **GitHub**. New users are always welcome!
 
-## Politics and student representation
+{{% /blocks/feature %}}
 
-I’ve always been attracted by the world of politics, and so I joined the student council, made my way to vice presidency, and ended up involved in so many positions that it’s hard to enumerate them. Wherever I went I defended with fierceness the interests of my faculty. I was told I kind of have a gift for words, and so I pursued a career inside a political party, starting by an affiliation.
+{{% blocks/feature
+  title="Follow us on X!" icon="fab fa-x-twitter"
+  url="https://x.com/docsydocs"
+%}}
 
-## Volunteering
+For announcement of latest features etc.
 
-After a few events collaborating with the AECC (Spanish Association Against Cancer by its acronym in Spanish) I decided I liked what they do, and so I joined them.
+{{% /blocks/feature %}}
 
-## Ping pong
+{{% /blocks/section %}}
 
-It was during my teenage times that I realized it was important to do some sport now and then, so I started playing football as a goalkeeper and spent some years getting to know local teams. But it wasn’t until I reached college that I developed a devotion for ping pong, since it was the perfect sport to play between classes; not too complicated, can be played wearing jeans... Every day the ping pong table was there for me. Eventually I became the EPSB’s champion.
+{{% blocks/section color="white" type="row text-center h1" %}}
 
-## F&F (Friends and Family)
+This is the second section
 
-But all these accomplishments come nowhere near my biggest attainment and that of which I feel most proud of: my family and my friends. They really make life worth living, and make every instant be worthy.
+{{% /blocks/section %}}
+
+{{% blocks/section color="secondary" type="row text-center h1" %}}
+
+This is the another section with center alignment
+
+{{% /blocks/section %}}
