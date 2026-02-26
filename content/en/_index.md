@@ -23,14 +23,15 @@ params:
 
 <!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
- <a {{% param btn_lg primary %}} href="/about/">
-  <i class="fas fa-user"></i>
-  Sobre mí
-</a>
-  <a {{% param btn_lg secondary %}} href="/about/">
-  <i class="fas fa-envelope"></i>
-  Contacto
-</a>
+  <a class="btn btn-lg btn-primary me-3 mb-4" href="/about/">
+    <i class="fas fa-user"></i>
+    Sobre mí
+  </a>
+
+  <a class="btn btn-lg btn-secondary mb-4" href="/contact/">
+    <i class="fas fa-envelope"></i>
+    Contacto
+  </a>
 </div>
 
 {{% blocks/link-down color="info" %}}
