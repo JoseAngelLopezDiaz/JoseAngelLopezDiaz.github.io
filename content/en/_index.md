@@ -6,7 +6,7 @@ params:
 ---
 
 {{% blocks/cover
-  title="Bienvenido a mi web! Cualesquiera que hayan sido los motivos que te trajeron aquí, ahora no importan. Estás aquí, y estás leyendo esto. Disfruta. "
+  title="Saludos, anónimo desconocido. "
   height="full td-below-navbar"
   image_anchor="top"
 %}}
@@ -40,12 +40,9 @@ params:
 
 {{% blocks/lead color="white" %}}
 
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+Cualesquiera que hayan sido los motivos que te trajeron aquí, ahora no importan. Estás aquí, y estás leyendo esto. Disfruta.
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
+
 
 {{% /blocks/lead %}}
 
@@ -65,12 +62,12 @@ Quizás sea lo que mejor se me da, o quizás crea que es lo que mejor se me da.
 %}}
 
 Puedes jugar [conmigo](https://www.chess.com/member/presio213)
-en chess.com, si te apetece perder.
+en chess.com, si te apetece perder. Mi foto de perfil es una taza con la cara de Nicolas Cage. No tiene pérdida.
 
 {{% /blocks/feature %}}
 
 {{% blocks/feature
-  title="Pulsa aquí para una mejor expreiencia" icon="fab fa-x-languaje"
+  title="Pulsa [aquí](WEB A PONER) para una mejor expreiencia" icon="fab fa-x-languaje"
   url="https://x.com/docsydocs"
 %}}
 
