@@ -1,93 +1,124 @@
 ---
-title: Goldydocs
-description: Porridge temperature assessment &mdash; in the cloud!
-params:
-  body_class: td-navbar-links-all-active
+title: "José Ángel López Díaz"
+linkTitle: "Home"
+type: "homepage"
 ---
 
-{{% blocks/cover
-  title="Welcome to Goldydocs: A Docsy Example and Starter Project!"
-  height="full td-below-navbar"
-  image_anchor="top"
-%}}
+# José Ángel López Díaz
 
-<!--
-  Want a cover without an image?
-  Add the following argument to the blocks/cover shortcode:
-    color="primary bg-gradient td-below-navbar"
--->
+Aquí irá el contenido de tu antigua página principal.
+<body>
 
-<!-- prettier-ignore -->
-{{% _param description %}}
-{.display-6}
-
-<!-- prettier-ignore -->
-<div class="td-cta-buttons my-5">
-  <a {{% _param btn-lg primary %}} href="docs/">
-    Learn more
-  </a>
-  <a {{% _param btn-lg secondary %}}
-    href="{{% param github_repo %}}"
-    target="_blank" rel="noopener noreferrer">
-    Get the code
-    {{% _param FA brands github "" %}}
-  </a>
+    <div class="header">
+    <nav class="nav-bar">
+        <a href="contact.html" class="contact-link">CONTACT</a>
+    </nav>
 </div>
 
-{{% blocks/link-down color="info" %}}
 
-{{% /blocks/cover %}}
+    <div class="container">
+        <h1>Personal Website of José Ángel López Díaz</h1>
+        <h2>Energy and Mineral Resources Engineering & Civil Engineering</h2>
+        <h2>Welcome to My Website</h2>
 
-{{% blocks/lead color="white" %}}
+        <!-- Banderas -->
+        <div>
+            <img src="https://flagcdn.com/w40/es.png" alt="Spanish Flag">
+            <img src="https://flagcdn.com/w40/it.png" alt="Italian Flag">
+            <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag">
+            <img src="https://flagcdn.com/w40/fr.png" alt="French Flag">
+            <img src="https://flagcdn.com/w40/de.png" alt="German Flag">
+        </div>
 
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+        <!-- Texto de bienvenida -->
+        <p>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-%C3%A1ngel-l%C3%B3pez-d%C3%ADaz-4226752aa/" target="_blank">LinkedIn Profile</a>
+        </p>
+        <p>
+            Dear anonymous unknown. It is with great pleasure that I welcome you to my humble little website. I am nothing but an amateur flute, ping pong, and chess player, who happens to actively enjoy engineering and languages. I created this site to keep a record of my personal goals and achievements. Hope you like it!
+        </p>
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
+        <!-- Acordeón -->
+        <div class="accordion">
+            <button class="accordion-btn">Languages</button>
+            <div class="accordion-content">
+                <p>I can fluently speak Spanish, English, French, Italian and I'm learning a little bit of German and Russian too. I'm just bored, it's no wonder that this webpage even exists.</p>
+            </div>
 
-{{% /blocks/lead %}}
+            <button class="accordion-btn">My book</button>
+            <div class="accordion-content">
+                <p>It is said that in life you must at least write a book, plant a tree and have a son. Well, so far i`ve completed the first two. La crisalida is the result of countless hours standing in fornt of the computer, and so it is the work of my life, I guess.</p>
+            </div>
 
-{{% blocks/section color="primary" type="row" %}}
+            <button class="accordion-btn">Flute</button>
+            <div class="accordion-content">
+                <p>Still learning, I'm not something of a musician myself, at least, yet.</p>
+            </div>
 
-{{% blocks/feature title="New chair metrics!" icon="fa-lightbulb" %}}
+            <button class="accordion-btn">Engiineering professional career</button>
+            <div class="accordion-content">
+                <p>I´m a passionate engineer, but still in college, though. I study in the Escuela Politécnica Superior de Belmez (EPSB), and I pre-registered in a professional mining association.</p>
+            </div>
 
-The Goldydocs UI now shows chair size metrics by default.
+            <button class="accordion-btn">Pico y pala Engineering</button>
+            <div class="accordion-content">
+                <p>At some point for some reason I thought that it would be a nice idea to create a YouTube channel where I can stand up on behalf of the mining industry, for it has been unfarily given a bad reputation throughout the years.</p>
+            </div>
 
-Please follow this space for updates!
+            <button class="accordion-btn">Chess</button>
+            <div class="accordion-content">
+                <p>There was no chess club in Belmez, and so I had to create one myself, thanks to the support of Javier de los Rios and my felow companions, our little chess comunity blossomed. Over the past few years i´ve assisted several tournaments, all of them for amateurs, without elo rating. I guess my highest achievement here is playing and winning an amateur wolrd champion, who also happened to be my math teacher in college, Javier de los Rios.</p>
+            </div>
 
-{{% /blocks/feature %}}
+            <button class="accordion-btn">Politics and student representation</button>
+            <div class="accordion-content">
+                <p>I´ve always been attracted by the wolrd of politics, and so I joined the student council, made my way to vice presidency, and ended up involved in so many positions that it´s hard to enumerate them. Wherever I went I defended with fierceness the interests of my faculty. I was told I kind of have a gift for words, and so I pursued a career inside a political party, starting by an afiliation.</p>
+            </div>
 
-{{% blocks/feature
-  title="Contributions welcome!" icon="fab fa-github"
-  url="https://github.com/google/docsy-example"
-%}}
+            <button class="accordion-btn">Volunteering</button>
+            <div class="accordion-content">
+                <p>After a few events collaborating with the AECC (Spanish Association Against Cancer by its acronym in Spanish) I decided i liked what they do, an so I joined them.</p>
+            </div>
 
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
+            
+            <button class="accordion-btn">Ping pong</button>
+            <div class="accordion-content">
+                <p>It was during my teenage times that I realized it was important to make some sport now and then, so I started playing football as a goalkeeper, spent some years getting to know local teams. But it wasn´t until I reached college that I developed devotion for pin pon, since it was the perfect sport to play between classes; not too complicated, can be plaid wearing jeans... Everyday the pin pon table was there for me. Eventually I became the EPSB´s champion.</p>
+            </div>
 
-{{% /blocks/feature %}}
+            
+            <button class="accordion-btn">F&F (Friends and Family)</button>
+            <div class="accordion-content">
+                <p>But all theese accomplishments come nowhere near my biggest attainment and that of wich i feel most proud of; my family and my friends. They really make live worth living, and make every instatnt be worthy.</p>
+            </div>
+            
+        </div>
 
-{{% blocks/feature
-  title="Follow us on X!" icon="fab fa-x-twitter"
-  url="https://x.com/docsydocs"
-%}}
+        <img src="cara.jpg" alt="Photo of José Ángel López Díaz">
+    </div>
 
-For announcement of latest features etc.
+    <div class="footer"></div>
 
-{{% /blocks/feature %}}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".accordion-btn").forEach(button => {
+                button.addEventListener("click", function () {
+                    let content = this.nextElementSibling;
 
-{{% /blocks/section %}}
+                    // Cierra todos los demás desplegables
+                    document.querySelectorAll(".accordion-content").forEach(item => {
+                        if (item !== content) {
+                            item.style.display = "none";
+                        }
+                    });
 
-{{% blocks/section color="white" type="row text-center h1" %}}
+                    // Alterna la visibilidad del actual
+                    content.style.display = (content.style.display === "block") ? "none" : "block";
+                });
+            });
+        });
+    </script>
 
-This is the second section
-
-{{% /blocks/section %}}
-
-{{% blocks/section color="secondary" type="row text-center h1" %}}
-
-This is the another section with center alignment
-
-{{% /blocks/section %}}
+    <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://app.copyrighted.com/website/b2mksm03lw85zQkN/"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="75" srcset="https://static.copyrighted.com/badges/125x75/06_2x.png 2x" src="https://static.copyrighted.com/badges/125x75/06.png"></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+    
+</body>
