@@ -24,11 +24,13 @@ params:
 <!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
   <a {{% _param btn-lg primary %}} href="docs/">
+    {{% _param FA brands flask "" %}}
     Sobre mí
   </a>
   <a {{% _param btn-lg secondary %}}
     href="{{% param github_repo %}}"
     target="_blank" rel="noopener noreferrer">
+    {{% _param FA brands user "" %}}
     Contacto
   </a>
 </div>
@@ -47,8 +49,7 @@ Cualesquiera que hayan sido los motivos que te trajeron aquí, ahora no importan
 
 {{% blocks/section color="primary" type="row" %}}
 
-{{% blocks/feature title="Mi pasión, aparte de la ingeniería de minas, es la literatura.
-" icon="fa-book" %}}
+{{% blocks/feature title="Mi pasión, aparte de la ingeniería de minas, es la literatura." icon="fa-book" %}}
 
 Quizás sea lo que mejor se me da, o quizás sea lo que creo que es lo que mejor se me da. En cualquier caso, he aquí mi [obra](MI LIBRO)
 
