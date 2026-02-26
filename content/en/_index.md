@@ -23,16 +23,14 @@ params:
 
 <!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
-  <a {{% _param btn-lg primary %}} href="docs/">
-    {{% _param FA brands flask "" %}}
-    Sobre mí
-  </a>
-  <a {{% _param btn-lg secondary %}}
-    href="{{% param github_repo %}}"
-    target="_blank" rel="noopener noreferrer">
-    {{% _param FA brands user "" %}}
-    Contacto
-  </a>
+ <a {{% param btn_lg primary %}} href="/about/">
+  <i class="fas fa-user"></i>
+  Sobre mí
+</a>
+  <a {{% param btn_lg secondary %}} href="/contact/">
+  <i class="fas fa-envelope"></i>
+  Contacto
+</a>
 </div>
 
 {{% blocks/link-down color="info" %}}
