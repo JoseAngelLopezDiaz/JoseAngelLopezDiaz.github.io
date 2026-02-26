@@ -1,6 +1,6 @@
 ---
 title: José Ángel López Díaz
-description: Entusiasta ingeniero de la energía y los recursos minerales
+description: Entusiasta ingeniero de la energía y los recursos minerales. Ostensiblemente, tengo demasiado tiempo libre.
 params:
   body_class: td-navbar-links-all-active
 ---
