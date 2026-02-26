@@ -25,12 +25,13 @@ params:
 <div class="td-cta-buttons my-5">
   <a {{% _param btn-lg primary %}} href="docs/">
     Sobre mí
+    {{% _param FA brands flask "" %}}
   </a>
   <a {{% _param btn-lg secondary %}}
     href="{{% param github_repo %}}"
     target="_blank" rel="noopener noreferrer">
     Contacto
-    {{% _param FA brands github "" %}}
+    {{% _param FA brands user "" %}}
   </a>
 </div>
 
@@ -48,9 +49,8 @@ Cualesquiera que hayan sido los motivos que te trajeron aquí, ahora no importan
 
 {{% blocks/section color="primary" type="row" %}}
 
-{{% blocks/feature title="" icon="fa-book" %}}
-
-Mi pasión, aparte de la ingeniería de minas, es la literatura.
+{{% blocks/feature title="Mi pasión, aparte de la ingeniería de minas, es la literatura.
+" icon="fa-book" %}}
 
 Quizás sea lo que mejor se me da, o quizás sea lo que creo que es lo que mejor se me da. En cualquier caso, he aquí mi [obra](MI LIBRO)
 
@@ -67,11 +67,11 @@ en chess.com, si te apetece perder. Mi foto de perfil es una taza con la cara de
 {{% /blocks/feature %}}
 
 {{% blocks/feature
-  title="Pulsa [aquí](WEB A PONER) para una mejor expreiencia" icon="fab fa-x-languaje"
+  title="Pulsa [aquí](WEB A PONER) para una mejor expreiencia" icon="fab fa-music"
   url="https://x.com/docsydocs"
 %}}
 
-Me encantan los idiomas, también.
+Adoro la música, también, lo cual me hace humano, en contra de lo que pueda parecer. "Sin música, la vida sería un error", que decía Nietzsche, con quien identifico porque yo también soy nihilista los lunes por la mañana.
 
 {{% /blocks/feature %}}
 
