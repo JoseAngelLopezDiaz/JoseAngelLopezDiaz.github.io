@@ -25,13 +25,11 @@ params:
 <div class="td-cta-buttons my-5">
   <a {{% _param btn-lg primary %}} href="docs/">
     Sobre mí
-    {{% _param FA brands flask "" %}}
   </a>
   <a {{% _param btn-lg secondary %}}
     href="{{% param github_repo %}}"
     target="_blank" rel="noopener noreferrer">
     Contacto
-    {{% _param FA brands user "" %}}
   </a>
 </div>
 
