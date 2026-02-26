@@ -27,7 +27,7 @@ params:
   <i class="fas fa-user"></i>
   Sobre mí
 </a>
-  <a {{% param btn_lg secondary %}} href="/contact/">
+  <a {{% param btn_lg secondary %}} href="/about/">
   <i class="fas fa-envelope"></i>
   Contacto
 </a>
