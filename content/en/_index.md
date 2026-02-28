@@ -1,6 +1,6 @@
 ---
 title: José Ángel López Díaz
-description: PATATA Entusiasta ingeniero de la energía y los recursos minerales. Ostensiblemente, con demasiado tiempo libre.
+description: Entusiasta ingeniero de la energía y los recursos minerales. Ostensiblemente, con demasiado tiempo libre.
 params:
   body_class: td-navbar-links-all-active
 ---
@@ -90,6 +90,6 @@ This is the second section
 
 {{% blocks/section color="secondary" type="row text-center h1" %}}
 
-This is the another section with center alignment
+¿Todavía quieres más? ¿En serio?
 
 {{% /blocks/section %}}
