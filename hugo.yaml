@@ -1,13 +1,12 @@
-baseURL: https://example.docsy.dev
-title: Señor Jose`s website
+baseURL: https://joseangellopezdiaz.github.io
+title: Señor Jose's website
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu slugorcontentbasename
 
 # Language settings
-contentDir: content/en
-defaultContentLanguage: en
+contentDir: content/es
+defaultContentLanguage: es
 defaultContentLanguageInSubdir: false
-# Useful when translating.
-enableMissingTranslationPlaceholders: true
+enableMissingTranslationPlaceholders: false
 
 enableRobotsTXT: true
 
@@ -113,8 +112,8 @@ params:
 
   privacy_policy: https://policies.google.com/privacy
 
-  # First one is picked as the Twitter card image if not set on page.
-  # images: [images/project-illustration.png]
+ # First one is picked as the Twitter card image if not set on page.
+images: [images/cara.jpg]
 
   # Menu title if your navbar has a versions selector to access old versions of your site.
   # This menu appears only if you have at least one [params.versions] set.
@@ -134,10 +133,11 @@ params:
   versionWithBuildId: 0.14.4-dev
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/google/docsy-example
+  github_repo: https://github.com/JoseAngelLopezDiaz/JoseAngelLopezDiaz.github.io
+
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://github.com/google/docsy
+ github_project_repo: ""
 
   # Specify a value here if your content directory is not in your repo's root directory
   # github_subdir: ""
@@ -147,7 +147,7 @@ params:
   github_branch: main
 
   # Google Custom Search Engine ID. Remove or comment out to disable search.
-  gcs_engine_id: d72aa9b2712488cc3
+  # gcs_engine_id: d72aa9b2712488cc3
 
   # Enable Lunr.js offline search
   offlineSearch: false
@@ -174,16 +174,16 @@ params:
     # Enable to show the side bar menu in its compact state.
     sidebar_menu_compact: false
     # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
-    sidebar_search_disable: false
+    sidebar_search_disable: true
     # Enable light/dark mode toggle menu in the navbar
-    showLightDarkModeMenu: true
+    showLightDarkModeMenu: false
 
     # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
     # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
     # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
     # add "hide_feedback: true" to the page's front matter.
     feedback:
-      enable: true
+      enable: false
       # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
       yes: >-
         Glad to hear it! Please <a
@@ -205,38 +205,8 @@ params:
   FA: <i class="fa-{1} fa-{2} text-{3} px-1"></i>
 
   links:
-    # End user relevant links. These will show up on left side of footer and in the community page if you have one.
-    user:
-      - name: User mailing list
-        url: https://example.org/mail
-        icon: fa fa-envelope
-        desc: Discussion and help from your fellow users
-      - name: X
-        url: https://example.org/x
-        icon: fab fa-x-twitter
-        desc: Follow us on X to get the latest news!
-      - name: Stack Overflow
-        url: https://example.org/stack
-        icon: fab fa-stack-overflow
-        desc: Practical questions and curated answers
-    # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-    developer:
-      - name: Site info
-        url: /site/
-        icon: fa-solid fa-hammer
-        desc: Site build information.
-      - name: GitHub
-        url: https://github.com/google/docsy
-        icon: fab fa-github
-        desc: Development takes place here!
-      - name: Slack
-        url: https://example.org/slack
-        icon: fab fa-slack
-        desc: Chat with other project developers
-      - name: Developer mailing list
-        url: https://example.org/mail
-        icon: fa fa-envelope
-        desc: Discuss development issues around the project
+  user: []
+  developer: []
 
 security:
   funcs: # cspell:disable-line
