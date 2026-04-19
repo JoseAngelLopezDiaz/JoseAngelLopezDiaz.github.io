@@ -80,13 +80,6 @@ Mi foto de perfil es una taza con la cara de Nicolas Cage. No tiene pérdida.
 
 {{% /blocks/feature %}}
 
-{{% /blocks/section %}}
-
-{{% blocks/section color="white" type="row text-center h1" %}}
-
-This is the second section
-
-{{% /blocks/section %}}
 
 {{% blocks/section color="secondary" type="row text-center h1" %}}
 
