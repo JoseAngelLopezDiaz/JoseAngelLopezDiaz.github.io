@@ -25,7 +25,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir _site
-          cp index.html style.css script.js favicon.png _site/
+          cp index.html style.css script.js favicon.png favicon-gracioso.png vida-fuera-del-cv.jpg _site/
           touch _site/.nojekyll
 
       - name: Upload artifact
